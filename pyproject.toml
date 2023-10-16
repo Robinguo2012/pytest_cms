@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "测试 cms 管理系统"
+version = "0.1.0"
+description = ""
+authors = ["Sailer <robin.guov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.4.2"
+selenium = "^4.14.0"
+pyyaml = "^6.0.1"
+allure-pytest = "^2.13.2"
+
+[tool.pytest.ini_options]
+markers = [
+    "smoke: 执行冒烟测试",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "pytest_cms.core.masonry.api"

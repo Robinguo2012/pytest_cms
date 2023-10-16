@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "cms-local-smoke",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "justMyCode": true,
+            "args": [
+                "-sv",
+                "--env",
+                "local",
+                "-m",
+                "smoke",
+                "--alluredir",
+                "./pytest_cms/report/"
+            ]
+        },
+        {
+            "name": "cms-local",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "justMyCode": true,
+            "args": [
+                "-sv",
+                "--env",
+                "local",
+                "--alluredir",
+                "./pytest_cms/report/"
+            ]
+        },
+        {
+            "name": "cms-dev",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "justMyCode": true,
+            "args": [
+                "-sv",
+                "--env",
+                "dev",
+                "--alluredir",
+                "./pytest_cms/report/"
+            ]
+        }
+    ]
+}
